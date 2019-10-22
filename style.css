@@ -1,0 +1,58 @@
+body {
+  padding: 50px;
+}
+
+form input {
+  border: none;
+}
+
+form input[type="text"], form input[type="email"] {
+  color: lightblue;
+  border-bottom: solid 1.5px lightblue;
+  padding: 5px;
+}
+
+form input[type="text"]:focus, form input[type="email"]:focus {
+  outline: none;
+}
+
+form input[type="submit"] {
+  background: none;
+  border: solid 1px lightblue;
+  color: lightblue;
+  padding: 8px 10px;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+  border-radius: 4px;
+}
+
+form input[type="submit"]:hover {
+  background: lightblue;
+  color: white;
+}
+
+.input-group {
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+}
+
+.input-group label {
+  position: absolute;
+  top: 14%;
+  left: 0px;
+  color: #999;
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
+  pointer-events: none;
+  font-family: sans-serif;
+}
+
+.input-group input:focus + label,
+.input-group input.has-val + label {
+  -webkit-transform: translateY(-70%) scale(0.7);
+          transform: translateY(-70%) scale(0.7);
+  left: -10px;
+  color: lightblue;
+}
+/*# sourceMappingURL=style.css.map */
